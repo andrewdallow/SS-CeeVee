@@ -31,15 +31,15 @@ class Page_Controller extends ContentController {
 	public function init() {
 		parent::init();
 		$themeFolder = $this->ThemeDir();
-                Requirements::set_combined_files_folder($themeFolder . '/combinedfiles');
-                                
-                $CSSFiles = array(
-                    $themeFolder . "/css/default.css",
-                    $themeFolder . "/css/layout.css",
-                    $themeFolder . "/css/media-queries.css",
-                    $themeFolder . "/css/magnific-popup.css"
-                ); 
-                Requirements::combine_files("combinedCSS.css", $CSSFiles);
+                
+                Requirements::css($themeFolder . "/css/default.css");
+                Requirements::css($themeFolder . "/css/layout.css");
+                Requirements::css($themeFolder . "/css/media-queries.css");
+                Requirements::css($themeFolder . "/css/magnific-popup.css");
+                Requirements::css($themeFolder . "/css/fontello/css/fontello.css");
+                Requirements::css($themeFolder . "/css/font-awesome/css/font-awesome.min.css");
+                Requirements::css($themeFolder . "/css/fonts.css");
+                
                 
                 Requirements::javascript($themeFolder .  "/javascript/modernizr.js");
                 Requirements::javascript("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js");

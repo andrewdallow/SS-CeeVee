@@ -1,5 +1,5 @@
 ---
-Name: mysite
+Name: CeeVeeSS
 After:
   - 'framework/*'
   - 'cms/*'
@@ -8,4 +8,5 @@ After:
 # See http://doc.silverstripe.org/framework/en/topics/configuration
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
-  theme: 'tutorial'
+  theme: 'CV-Theme'
+  rewrite_hash_links: false
