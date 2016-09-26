@@ -133,12 +133,16 @@ class CVPage extends Page {
                 HtmlEditorField::create('SkillsIntro', 'Skills Introduction')
             );
         
-        $fields->addFieldToTab('Root.Skills', GridField::create(
-               'Slills',
-               'SkillItem',
-               $this->Skills(),
-               GridFieldConfig_RecordEditor::create()
-        ));
+        $conf=GridFieldConfig_RelationEditor::create(10);
+        $conf->addComponent(new GridFieldSortableRows('SortOrder'), 'GridFieldManyRelationHandler');
+        
+        $fields->addFieldToTab('Root.Skills', new GridField(
+                'Skills', 
+                'SkillItem',
+                $this->Skills(),
+                $conf
+            ));
+
         
         /**********************************************************************
         * Contact Section
@@ -202,7 +206,7 @@ class CVPage_Controller extends Page_Controller {
     }
     public function getSkills($count = 3) {
         return SkillItem::get()
-                ->sort('Rating', 'DESC')
+                ->sort('SortOrder')
                 ->limit($count);
     }
     

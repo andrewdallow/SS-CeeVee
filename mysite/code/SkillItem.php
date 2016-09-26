@@ -8,7 +8,8 @@
 class SkillItem extends DataObject {
     private static $db = array(
         'SkillName' => 'Varchar',
-        'Rating' => 'Varchar'
+        'Rating' => 'Varchar',
+        'SortOrder'=>'Int'
     );
     
     private static $has_one = array(
@@ -26,4 +27,6 @@ class SkillItem extends DataObject {
             SliderField::create('Rating','Competency Level', 0, 100)           
             ));
     }
+    
+    private static $default_sort='SortOrder';
 }
