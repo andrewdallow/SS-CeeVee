@@ -207,7 +207,8 @@
             </div>
 
             <div class="link-box">
-                <a href="$Website">Details</a>
+                <% if $Website %><a href="$Website">Details</a><% end_if %>
+                <% if $Code %><a class="popup-modal-code" href="$Code">Code</a><% end_if %>
                 <a class="popup-modal-dismiss">Close</a>
             </div>
 

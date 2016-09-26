@@ -10,6 +10,7 @@ class PortfolioItem extends DataObject {
         'Title' => 'Varchar',
         'Subtitle' => 'Varchar',
         'Website' => 'Text',
+        'Code' => 'Text',
         'Description' => 'Text',
         'Tags' => 'Text'
     );    
@@ -49,6 +50,7 @@ class PortfolioItem extends DataObject {
             TextField::create('Title'),
             TextField::create('Subtitle'),
             TextField::create('Website'),
+            TextField::create('Code'),
             TextareaField::create('Description'),
             $field                       
             ));
