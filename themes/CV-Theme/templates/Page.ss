@@ -24,7 +24,7 @@ Change it, enhance it and most importantly enjoy it!
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
-	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
+	<link rel="icon" href="$ThemeDir/images/favicon.ico?v=2" />
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <% include Header %>

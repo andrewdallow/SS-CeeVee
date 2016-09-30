@@ -134,7 +134,8 @@ class CVPage extends Page {
             );
         
         $conf=GridFieldConfig_RelationEditor::create(10);
-        $conf->addComponent(new GridFieldSortableRows('SortOrder'), 'GridFieldManyRelationHandler');
+        $conf->addComponent(new GridFieldSortableRows('SortOrder'),
+                'GridFieldManyRelationHandler');
         
         $fields->addFieldToTab('Root.Skills', new GridField(
                 'Skills', 
@@ -179,11 +180,16 @@ class CVPage extends Page {
                 TextField::create('PortfolioTitle')
             );
         
+        $conf2=GridFieldConfig_RelationEditor::create(10);
+        $conf2->addComponent(new GridFieldSortableRows('SortOrder'),
+                'GridFieldManyRelationHandler');
+        
+        
         $fields->addFieldToTab('Root.Portfolio', GridField::create(
                'Portfolio',
                'PortfolioItem',
                $this->Portfolio(),
-               GridFieldConfig_RecordEditor::create()
+               $conf2
         ));
         
         
@@ -212,7 +218,7 @@ class CVPage_Controller extends Page_Controller {
     
     public function getPortfolio($count = 8) {
         return PortfolioItem::get()
-                ->sort('Created', 'ASC')
+                ->sort('SortOrder')
                 ->limit($count);
     }
     

@@ -12,7 +12,8 @@ class PortfolioItem extends DataObject {
         'Website' => 'Text',
         'Code' => 'Text',
         'Description' => 'Text',
-        'Tags' => 'Text'
+        'Tags' => 'Text',
+        'SortOrder'=>'Int'
     );    
     
     
@@ -55,4 +56,5 @@ class PortfolioItem extends DataObject {
             $field                       
             ));
     }
+    private static $default_sort='SortOrder';
 }
