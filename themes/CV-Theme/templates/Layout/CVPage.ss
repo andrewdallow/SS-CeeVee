@@ -1,3 +1,44 @@
+<header id="home" style="background: #161415 url($BannerImage.URL) no-repeat top center;">
+
+    <% include Navigation %>
+
+    <div class="row banner">
+        <div class="banner-text">
+            <h1 class="responsive-headline">$Heading</h1>
+            <h3>$Content</h3>
+            <hr />
+            <ul class="social">
+                <% if $FacebookLink %>
+                <li><a href="$FacebookLink"><i class="fa fa-facebook"></i></a></li>
+                <% end_if %>
+                <% if $TwitterLink %>
+                <li><a href="$TwitterLink"><i class="fa fa-twitter"></i></a></li>
+                <% end_if %>
+                <% if $GoogleLink %>
+                <li><a href="$GoogleLink"><i class="fa fa-google-plus"></i></a></li>
+                <% end_if %>
+                <% if $LinkedInLink %>
+                <li><a href="$LinkedInLink"><i class="fa fa-linkedin"></i></a></li>
+                <% end_if %>
+                <% if $InstagramLink %>
+                <li><a href="$InstagramLink"><i class="fa fa-instagram"></i></a></li>
+                <% end_if %>
+                <% if $DribbbleLink %>
+                <li><a href="$DribbbleLink"><i class="fa fa-dribbble"></i></a></li>
+                <% end_if %>
+                <% if $SkypeLink %>
+                <li><a href="$SkypeLink"><i class="fa fa-skype"></i></a></li>
+                <% end_if %>
+            </ul>
+        </div>
+    </div>
+
+    <p class="scrolldown">
+        <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+    </p>
+
+</header> <!-- Header End -->
+
 <!-- About Section
 ================================================== -->
 <section id="about">
@@ -24,7 +65,7 @@
                     <p class="address">
                         <span>$Name</span><br>
                         <span>$PostalAddress<br>
-                            $PostalCity<br> 
+                            $PostalCity<br>
                             $PostalRegion $PostalCode, $PostalCountry
                         </span><br>
                         <span>$PhoneContact</span><br>
@@ -102,7 +143,7 @@
                 <div class="twelve columns">
 
                     <h3>$Company</h3>
-                    <p class="info">$Position <span>&bull;</span> 
+                    <p class="info">$Position <span>&bull;</span>
                         <em class="date">
                             $StartDate.Month $StartDate.Year - <% if $PresentDay %> Present <% else %> $EndDate.Month $EndDate.Year <% end_if %>
                         </em>
@@ -112,13 +153,13 @@
 
                 </div>
 
-            </div> 
+            </div>
             <% end_loop %>
-            <!-- item end -->            
+            <!-- item end -->
 
         </div> <!-- main-col end -->
 
-    </div> 
+    </div>
     <% end_if %>
     <!-- End Work -->
 
@@ -148,7 +189,7 @@
 
         </div> <!-- main-col end -->
 
-    </div> 
+    </div>
     <% end_if %>
     <!-- End skills -->
 
@@ -184,9 +225,9 @@
                         </a>
 
                     </div>
-                </div> 
+                </div>
                 <% end_loop %>
-                <!-- item end -->                
+                <!-- item end -->
 
             </div> <!-- portfolio-wrapper end -->
 
@@ -221,7 +262,7 @@
 
     </div> <!-- row End -->
 
-</section> 
+</section>
 <% end_if %>
 <!-- Portfolio Section End-->
 
@@ -249,18 +290,18 @@
                 <div class="flexslider">
 
                     <ul class="slides">
-                        
+
                         <% loop $getTestimonials %>
                         <li>
                             <blockquote>
                                 <p>$Testimonial</p>
                                 <cite>$Name</cite>
                             </blockquote>
-                        </li> 
+                        </li>
                         <% end_loop %>
                         <!-- slide ends -->
 
-                        
+
 
                     </ul>
 
@@ -272,7 +313,7 @@
 
     </div>  <!-- text-container ends -->
 
-</section> 
+</section>
 <% end_if %>
 <!-- Testimonials Section End-->
 
@@ -354,7 +395,7 @@
                 <p class="address">
                         <span>$Name</span><br>
                         <span>$PostalAddress<br>
-                            $PostalCity<br> 
+                            $PostalCity<br>
                             $PostalRegion $PostalCode, $PostalCountry
                         </span><br>
                         <span>$PhoneContact</span><br>
@@ -363,16 +404,10 @@
 
             </div>
 
-            
+
 
         </aside>
 
     </div>
 
 </section> <!-- Contact Section End-->
-
-
-
-
-
-

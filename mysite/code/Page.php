@@ -42,7 +42,7 @@ class Page_Controller extends ContentController {
                 
                 
                 Requirements::javascript($themeFolder .  "/javascript/modernizr.js");
-                Requirements::javascript("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js");
+                Requirements::javascript("https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js");
                 Requirements::javascript($themeFolder .  "/javascript/jquery-migrate-1.2.1.min.js");  
                 
                 $JSFiles = array(

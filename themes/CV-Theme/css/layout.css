@@ -321,7 +321,7 @@ ul#nav li.current a { color: #F06000; }
    display: inline-block;
   	height: 42px;
    line-height: 42px;
-   border-radius: 3px 0 0 3px;   
+   border-radius: 3px 0 0 3px;
 }
 
 
@@ -635,7 +635,7 @@ call-to-action .button {
    color: #0D0D0D;
 }
 #call-to-action p span {
-	font-family: 'opensans-semibold', sans-serif; 
+	font-family: 'opensans-semibold', sans-serif;
 	color: #D8D8D8;
 }
 
@@ -659,7 +659,7 @@ call-to-action .button {
    padding-bottom: 66px;
 }
 #testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;   
+   font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
@@ -1009,3 +1009,31 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+/**
+ * Log in Page
+ */
+
+#login h1 {
+  color: #fff;
+  margin-top: 10px;
+}
+
+#login h2 {
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+}
+
+#login nav {
+  font-size: 16px;
+}
+
+#login label {
+  color: #fff;
+}
+
+#login {
+  padding-top: 90px;
+  padding-bottom: 60px;
+
+}
