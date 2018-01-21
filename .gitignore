@@ -1,3 +1,4 @@
+/composer.lock
 # ignore cache folder
 /silverstripe-cache/
 
@@ -18,5 +19,4 @@ _ss_environment.php
 /sliderfield
 /sortablegridfield
 /tagfield
-/themes/simple
 # END of GitIgnoreEditor
