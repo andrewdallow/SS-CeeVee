@@ -9,5 +9,7 @@ Can be used as a resume website showcasing ones skills and portfolio. The webist
   * [styleshout](https://www.styleshout.com/free-templates/ceevee/)
 
 ## Requirements
-  * SilverStripe 3.4 or above ((both framework and cms)
+  * SilverStripe 3.4 or above (both framework and cms)
   * PHP 5.3
+
+## Installation Instructions  
